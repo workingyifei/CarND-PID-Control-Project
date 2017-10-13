@@ -7,3 +7,5 @@ i error is the accumulation of all cte's. I or integral is proportional to i err
 d error is the difference between current and previous cte. D or derivative is proportional to d error. d error counter-steer cte or the p error to mitigate or dampen the oscillation. It's useful when car is in a sharp turn where P and I may not be able to bring the vehicle back in time.
 
 I tuned P, I and D manually starting with P and D. With P = 0.3, the car drift heavily and after decreasing to 0.1 it seems to be stable. Then tune D and increase little by little bo compensate or decrease the oscillation till optimal. I've found out with P=0.2, I=0.004 and D=3.0, the car runs best in the simulator.
+
+It could also be tuned with an algorithm called "twiddle" explained by Sebastian in the class. i added an example python code in /src.
